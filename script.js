@@ -17,9 +17,7 @@ const handleSubmit = (e) => {
 
     span.textContent = data.email;
     
-    if (data.email === '') {
-        alert("Please enter a valid email address")
-    }else if (data.email !== '') {
+    if (data.email !== '') {
         main.classList.toggle('hidden')
         success.classList.toggle('hidden')
     }

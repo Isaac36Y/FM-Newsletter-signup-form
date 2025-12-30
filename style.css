@@ -215,7 +215,7 @@ textarea:not([rows]) {
     .card {
         background-color: var(--white);
         width: 58rem; /* for a card like this is it okat to use exact sizing like this? */
-        height: 40rem;
+        min-height: 40rem;
         display: flex;
         border-radius: 2rem;
     }
