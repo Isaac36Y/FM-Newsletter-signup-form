@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png"> 
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+</head>
+<body>
+
+<!-- Sign up form start -->
+
+  <main id="card" class="card ">
+    <img src="./assets/images/illustration-sign-up-tablet.svg" alt="" class="mobile-img">
+    <div class="card__container | neutral-800">
+      <h1 class="card__header | bold">Stay updated!</h1>
+      <p class="card__par">Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul class="card__unordered" role="list">
+        <li class="unordered__list">
+          <img src="./assets/images/icon-list.svg" alt="" class="list__img">
+          <p class="list__par">Product discovery and building what matters</p>
+        </li>
+        <li class="unordered__list">
+          <img src="./assets/images/icon-list.svg" alt="" class="list__img">
+          <p class="list__par">Measuring to ensure updates are a success</p>
+        </li>
+        <li class="unordered__list"> 
+          <img src="./assets/images/icon-list.svg" alt="" class="list__img">
+          <p class="list__par">And much more!</p>
+        </li>
+      </ul>
+      <form action="" class="form" id="form">
+        <div class="email">
+          <label for="email" class="email__label | neutral-700 bold">Email address</label>
+          <input id="email" class="email__input" type="email" name="email" placeholder="email@company.com"></input>
+        </div>
+      </form>
+      <button id="submit-button" form="form" type="submit" class="button | bold">Subscribe to monthly newsletter</button>
+    </div>
+    <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" class="desktop-img | hidden"> 
+  </main>
+
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+
+  <div class="success | neutral-800 hidden" id="success">
+    <div class="success__container">
+      <img src="./assets/images/icon-success.svg" alt="" class="success__img">
+      <h1 class="success__header | bold">Thanks for subscribing!</h1>
+      <p class="success__par">
+        A confirmation email has been sent to <span id="span"></span>.
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+      <button id="success__btn" class="success__btn">Dismiss message</button>
+    </div>
+  </div>
+
+  <!-- Success message end -->
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
