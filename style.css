@@ -134,6 +134,7 @@ textarea:not([rows]) {
 
 .mobile-img {
     margin-inline: auto;
+    margin-block-start: -1rem
 }
 
 .success__img {
